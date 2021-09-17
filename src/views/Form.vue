@@ -2,11 +2,11 @@
   <div class="home">
     <h3>Form (校验表单)</h3>
     <iForm ref="form" :model="formData" :rules="rules">
-      <iFormItem label="名称：" prop="name">
+      <iFormItem label="名称：" prop="name" >
         <iInput v-model="formData.name"></iInput>
       </iFormItem>
       <iFormItem label="邮箱：" prop="mail">
-        <iInput v-model="formData.mail"></iInput>
+        <iInput v-model="formData.mail"></iInput>  
       </iFormItem>
       <button @click="handleSubmit">提交</button>
       <button @click="handleReset">重置</button>
@@ -46,3 +46,21 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home{
+  width: 400px;
+  height: 300px;
+  background-color: rgb(236, 253, 255);
+  margin: auto;
+  padding: 30px;
+}
+button{
+
+  width: 50px;
+  height: 30px;
+  background-color: rgb(84, 207, 238);
+  border: none;
+  margin-top: 30px;
+ margin-left: 30px;
+}
+</style>

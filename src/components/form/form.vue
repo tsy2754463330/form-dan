@@ -45,3 +45,13 @@ export default {
   }
 }
 </script>
+<style scoped>
+div{
+  display: flex;
+  justify-content: start;
+  width: 410px;
+  flex-wrap: wrap;
+  position: relative;
+  /* background-color: rgb(241, 193, 239); */
+}
+</style>
